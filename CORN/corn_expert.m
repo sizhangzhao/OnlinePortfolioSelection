@@ -34,8 +34,7 @@ if K<= length(val)
     pos = pos(1:K);
 end
 ind = find(val >= threshold);   % those who are TRUE
-C = pos(ind);                   % those positions where val > threshold
-
+C = pos(ind);                   % those positions where val > threshold 
 if decay_method == 'exp'
     decay = 0.99.^(1:length(C));
 else
